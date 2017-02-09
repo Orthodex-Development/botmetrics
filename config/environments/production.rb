@@ -84,4 +84,6 @@ Rails.application.configure do
     domain:         'heroku.com',
     enable_starttls_auto: true
   }
+
+  config.action_mailer.default_url_options = { :host => 'chatbotanalytics.herokuapp.com' }
 end
