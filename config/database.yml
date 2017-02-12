@@ -83,5 +83,5 @@ test:
 production:
   <<: *default
   database: bot_metrics_production
-  username: bot_metrics
-  password: <%= ENV['BOT_METRICS_DATABASE_PASSWORD'] %>
+  username: pguser
+  password: <%= ENV['PG_DATABASE_PASSWORD'] %>
