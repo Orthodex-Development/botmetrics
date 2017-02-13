@@ -7,7 +7,7 @@ class SetupBotJob < Job
   end
 
   private
-
+=begin
   def setup_slack_bot!
     slack = Slack.new(@instance.token)
     auth_info = slack.call('auth.test', :get)
@@ -56,7 +56,7 @@ class SetupBotJob < Job
       Rails.logger.error "Could not create event 'bot-installed' for instance #{bot.uid} #{e.inspect}"
     end
   end
-
+=end
   def setup_facebook_bot!
     facebook = Facebook.new(@instance.token)
     auth_info = facebook.call('me', :get)
