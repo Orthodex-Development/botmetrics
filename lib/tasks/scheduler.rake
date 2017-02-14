@@ -11,7 +11,7 @@ namespace :botmetrics do
   task :messages_send => :environment do
     SendScheduledMessageJob.perform_async
   end
-  
+
   desc "DailyReport.Send"
   #every(5.minutes, 'DailyReport.Send') do
   task :daily_report_send => :environment do
